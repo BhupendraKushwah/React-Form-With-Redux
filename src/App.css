@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.Navbar{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar h1{
+    font-size: 30px;
 }
+.container{
+    max-width: 1200px;
+    margin: auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.formContainer{
+    max-width: 1065px;
+    margin: auto;
+}
+.formText{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    padding: 10px 20px;
+    
+}
+.inputContainer{
+    margin: 18px 0;
+}
+label{
+    font-weight: bold;
+}
+.impStart{
+    color: red;
+}
+input:focus,select:focus,textarea:focus{
+    border: none;
+  outline: none;
+}
+input,select,textarea{
+    border: none;
+    flex: 1;
+  outline: none;
+  padding: 20px;
+  font-size: 16px;
+}
+input::placeholder {
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+}
+select option{
+    padding: 20px 0;
+}
+.custom-arrow {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('/public/Dropdown.png'); 
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin: 6px;
+    background-size: 15px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .fixed-textarea {
+    width: 98%; 
+    height: 150px; 
+    resize: none; 
+    padding: 10px; 
   }
-  to {
-    transform: rotate(360deg);
-  }
+i{
+    padding: 0px 10px;
+    color: #3FAEFD;
+    font-size: 24px;
+}
+.inputBox,.dropdown-list{
+    padding: 5px 10px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.dropdown{
+    margin: 10px 0;
+}
+.submitBtn{
+    margin: 50px 0 20px 0;
+}
+.submitBtn button{
+    border-radius: 10px;
+    background-color: #2c3865;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: none;
+}
+.submitBtn button:hover{
+    background-color: #2c3865
+}
+.react-datepicker-wrapper,.react-datepicker__input-container input{
+    width: 96%;
 }
